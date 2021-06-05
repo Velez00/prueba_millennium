@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(to bottom right, aqua, white);
+}
+#imagen1, #imagen2{
+    float: none;
+    height: 20px;
+    display: none;
+    background: white;
+}
+#formPrincipal{
+    float: none;
+    height: 500px;
+    width:500px;
+    background-color: orangered;
+    margin-top: 70px;
+    margin-left: 33%;
+    border: 3px solid black;
+    padding: 2px;
+    text-align: center;
+}
+#btnguardar{
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+#btnguardar:hover{
+    background-color: black;
+    color: orangered;
+}

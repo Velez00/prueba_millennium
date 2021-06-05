@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- En el head incluimos el utf-8 para tener el lenguaje universal, y viewport aunque en este caso no se 
+   utilizara, ya que no es necesario responsive desing y los scripts necesarios, en este caso el de la libreria jquery-3
+   para hacer la peticion AJAx y el app.js en el cual esta el codigo para insertar los datos en la base de datos atraves 
+   de php 
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud datos</title>
+    <script src="Js/jquery-3.6.0.min.js"></script>
+    <script src="Js/app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Creamos el formulario principal, en el cual se ingresaran los datos de nombre y apellido y por ultimo
+    creamos el boton para asignarle en el metodo ajax la funcion a cumplir, en este caso guardar los 2 datos ingresados.
+    Esto se llevara a traves del metodo POST-->
+
+    <form id="formPrincipal" method="POST">
+      <h1 id="titulo">Datos de usuario</h1>
+      <br />
+      <h3>Por favor ingresar su nombre</h3>
+      <input type="text" placeholder="Nombre" id="nombre" name="nombre" />
+      <img id="imagen1" src="img/fallo.png" alt="Error" />
+      <h3>Por favor ingresar su apellido</h3>
+      <input type="text" placeholder="Apellido" id="apellido" name="apellido" />
+      <img id="imagen2" src="img/fallo.png" alt="Error" />
+      <br /><br />
+      <input type="button" id="btnguardar" value="Guardar" />
+    </form>
+  </body>
+</html>
